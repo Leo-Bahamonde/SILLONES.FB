@@ -1,82 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESQUINEROS</title>
-    <link rel="shortcut icon" href="imagenes\Logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- LIGHTBOX --><link rel="stylesheet" href="lightbox2-2.11.3/dist/css/lightbox.min.css">
-    <script src="js/script.js"></script>
+    <title>CONTACTOS</title>
+     <%- include ('partials/head.html')%>
 </head>
 
 <body>
   <!--menú de navegación-->
-  <%- include ('partials/menu.html')%>
+         <%- include ('partials/menu.html')%>
   <!--Fin del menú de navegación-->
+ 
+  
+  <!-- formulario de contacto en html y css -->  
+    <div class="contact_form">
+        <div class="formulario">            
+      <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                    <form action="submeter-formulario.php" method="post">               
+    <p>
+      <label for="nombre" class="colocar_nombre">Nombre
+         <span class="obligatorio">*</span>
+      </label>
+         <input class="primary" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+    </p>
+                            
+     <p>
+        <label for="email" class="colocar_email">Email
+         <span class="obligatorio">*</span>
+        </label>
+          <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+     </p>
+                        
+     <p>
+       <label for="telefone" class="colocar_telefono">Teléfono
+         </label>
+           <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+     </p>                     
+     <p>
+        <label for="mensaje" class="colocar_mensaje">Mensaje
+            <span class="obligatorio">*</span>
+        </label>                     
+          <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+     </p>                                    
+                            
+      <button type="submit" name="enviar_formulario" class="btn btn-primary" id="enviar"><p>Enviar</p></button>
 
-  <div class="container text-center my-3">
-    <h2 >SILLONES FB</h2>
-    <p>Somos fabricantes directos en Villa Ballester, San Martin. Aceptamos tarjetas Visa o MasterCard (credito).
-         Realizamos envios a domicilio costo adicional segun localidad.</p>
-
-<div>
-<!--CONTACTOS-->
- <div class="container text-center p-5 contactos"><hr>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 align-self-center">
-          <h3>Contactos</h3>
-          <hr width="50%">
-          <h4 class="pt-2">Donde estamos?</h4>
-          <i> Villa Ballester, San Martín. San Pedro 6128</i><br>
-          <h4 class="pt-2">Telefono</h4>
-          <i class="fab fa-whatsapp"><a href="tel:+"> +54 9 11 3817-0024</a></i><br>
-          <h4 class="pt-2">Email</h4>
-          <i class="fa fa-envelope"><a href="">@sillonesfabianbalbuena</a></i><br>
-        </div>
-        
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5">
-            <div class="card ">
-                <div class="card-header bg-dark text-white text-center">
-                    <h4>COMUNICATE CON NOSOTROS</h4>
-                </div>
-                <div class="card-body">
-                    <form action="">
-                        <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="" cols="30" rows="10" placeholder="escribe un mensaje..."></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-primary btn-block">Enviar</button>
-                        </div>
-                    </form>    
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-5 align-self-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.5419321062742!2d-58.57808657074416!3d-34.549308394194135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbb357b704c13%3A0xc3a17ad27d82411e!2sSillones%20FB!5e0!3m2!1ses-419!2sar!4v1594497913971!5m2!1ses-419!2sar" 
-            width="700px" height="400px" style="border:5px;"></iframe>    
-        </div> 
-        
+     <p class="aviso">
+        <span class="obligatorio"> * </span>los campos son obligatorios.
+     </p>                    
+                        
+     </form>
+        </div>  
     </div>
-</div>
 
-</div>
-</div> 
-</div>
+</body>
+</html>
 
-  <!--FOOTER-->
- 
-<%- include ('partials/footer+script.html')%>
- 
+<!--FOOTER-->
+       <%- include ('partials/footer+script.html')%>
 <!-- FIN FOOTER-->
 
+</body>
+</html>
+
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.15145826681!2d-58.57977099958233!3d-34.549720385152554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbb357b704c13%3A0xc3a17ad27d82411e!2sSillones%20FB!5e0!3m2!1ses!2sar!4v1599089384698!5m2!1ses!2sar" 
+						width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
 
 
  

@@ -77,22 +77,5 @@ router.get("/contactos",(req,res) =>{
     res.render("contactos.html",{title: "sillones.html"});
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 module.exports = router;
+

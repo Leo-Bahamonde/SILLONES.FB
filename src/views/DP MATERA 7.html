@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATERA 1</title>
-    <link rel="shortcut icon" href="imagenes\Logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-    crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- LIGHTBOX --><link rel="stylesheet" href="lightbox2-2.11.3/dist/css/lightbox.min.css">
-    <script src=""></script>
+  <head>
+    <title>MATERA 7</title>
+    <%- include ('partials/head.html')%>
+  </head>
+  <body>
+    <!--menú de navegación-->
+    <%- include ('partials/menu.html')%>
+    <!--Fin del menú de navegación-->
 
+    <div class="container text-center my-3">
+      <h2>SILLONES FB</h2>
+      <p>
+        Somos fabricantes directos en Villa Ballester, San Martin. Aceptamos
+        tarjetas Visa o MasterCard (credito). Realizamos envios a domicilio
+        costo adicional segun localidad.
+      </p>
 
-</head>
-<body>
-<!--menú de navegación-->
-<%- include ('partials/menu.html')%>
-<!--Fin del menú de navegación-->
-
-  
-  <div class="container text-center my-3">
-    <h2 >SILLONES FB</h2>
-    <p>Somos fabricantes directos en Villa Ballester, San Martin. Aceptamos tarjetas Visa o MasterCard (credito). Realizamos envios a domicilio costo adicional segun localidad.</p>
-                          
-     <div class="align-items-center"><hr>
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-            <img src="imagenes\MATERAS\f0ac067e36c4.jpg" alt="MATERA" title="MATERA" width="500px" height="auto">
+      <div class="align-items-center">
+        <hr />
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+            <img
+              src="imagenes\MATERAS\f0ac067e36c4.jpg"
+              alt="MATERA"
+              title="MATERA"
+              width="500px"
+              height="auto"
+            />
             <section>
-                <div class="my-3">
-                  <a class="example-image-link iterm" href="imagenes\MATERAS\f0ac067e36c4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."></a>
-                </div>
-              </section>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" >
+              <div class="my-3">
+                <a
+                  class="example-image-link iterm"
+                  href="imagenes\MATERAS\f0ac067e36c4.jpg"
+                  data-lightbox="example-set"
+                  data-title="Click the right half of the image to move forward."
+                ></a>
+              </div>
+            </section>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
             <h1>MATERA</h1>
-            <hr width="50%">
+            <hr width="50%" />
             <h4 class="pt-2">descripcion</h4>
-            <i class="fas fa-globe">MATERA Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto ullam, pariatur veritatis voluptas dignissimos ducimus 
-                fuga recusandae exercitationem esse laborum praesentium necessitatibus quam dolor voluptatibus, dicta corrupti ipsum? Fuga. </i><br><br>
-                <a href="" class="btn btn-primary" type="submit">COMPRAR</a><br><br>
-                <a href="" class="btn btn-primary" type="submit">AGREGAR AL CARRITO</a>   
-          </div> <br>
-      
-  </div>
-  </div>
-     
-  </div>
+            <i class="fas fa-globe"
+              >MATERA Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam iusto ullam, pariatur veritatis voluptas dignissimos
+              ducimus fuga recusandae exercitationem esse laborum praesentium
+              necessitatibus quam dolor voluptatibus, dicta corrupti ipsum?
+              Fuga. </i
+            ><br /><br />
+            <a href="" class="btn btn-primary" type="submit">COMPRAR</a
+            ><br /><br />
+            <a href="" class="btn btn-primary" type="submit"
+              >AGREGAR AL CARRITO</a
+            >
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
     <!--FIN PAGINAS-->
 
-<br>
-<br>
-<br>
-<br>
+    <br />
+    <br />
+    <br />
+    <br />
 
+    <!--FOOTER-->
 
+    <%- include ('partials/footer+script.html')%>
 
-<!--FOOTER-->
- 
-<%- include ('partials/footer+script.html')%>
- 
-<!-- FIN FOOTER-->
-  
-</body>
+    <!-- FIN FOOTER-->
+  </body>
 </html>
