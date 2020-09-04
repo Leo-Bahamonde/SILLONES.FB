@@ -220,15 +220,15 @@
 
  @media only screen and (min-width:350px) and (max-width: 600px) {
    footer {
-     font-size: 30px;
+     font-size: 20px;
    }
  }
 
- @media only screen and (min-width:100px) and (max-width: 349px) {
+/*  @media only screen and (min-width:100px) and (max-width: 349px) {
    footer {
-     font-size: 40px;
+     font-size: 20px;
    }
- }
+ } */
 
  /*   footer {
     position: absolute;
@@ -266,37 +266,9 @@
    }
  }
 
- /* BOTON */
- @media only screen and (min-width:350px) and (max-width: 600px) {
-   .boton {
-     width: 150px;
-     height: 70px;
-
-   }
- }
-
- @media only screen and (min-width:100px) and (max-width: 349px) {
-   .boton {
-     width: 200px;
-     height: 70px;
-   }
- }
-
- @media only screen and (min-width:350px) and (max-width: 600px) {
-   .boton p {
-     font-size: 30px;
-   }
- }
-
- @media only screen and (min-width:100px) and (max-width: 349px) {
-   .boton p {
-     font-size: 30px;
-   }
- }
-
  @media only screen and (max-width: 600px) {
    .fabricantesDirectos {
-     font-size: 40px;
+     font-size: 20px;
    }
  }
 
@@ -312,7 +284,7 @@
  /* FIN PREDUCTOS DESTACADOS*/
 
  /*MENU DEL NAVEGADOR */
- @media only screen and (min-width:100px) and (max-width: 600px) {
+/*  @media only screen and (min-width:100px) and (max-width: 600px) {
    a {
      font-size: 30px;
    }
@@ -322,25 +294,25 @@
    a {
      font-size: 50px;
    }
- }
+ } */
 
  /* FIN MENU DEL NAVEGADOR*/
 
- @media only screen and (min-width:100px) and (max-width: 600px) {
-   #menuCSS {
+/*  @media only screen and (min-width:350px) and (max-width: 600px) {
+   .menuCSS {
      font-size: 30px;
    }
  }
 
  @media only screen and (min-width:100px) and (max-width: 349px) {
-   #menuCSS {
-     font-size: 50px;
+   .menuCSS {
+     font-size: 30px;
    }
- }
+ } */
 
  @media only screen and (min-width:100px) and (max-width: 600px) {
    .muestra {
-     font-size: 30px;
+     font-size: 20px;
    }
  }
 
