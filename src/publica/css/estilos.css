@@ -1,425 +1,376 @@
- @media screen and (max-width: 770px) {
-   body {
-     position: absolute;
-   }
- }
-
- /*   body {
-    background: #FFEFBA;
-    /* fallback for old browsers 
-    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
-    /* Chrome 10-25, Safari 5.1-6 
-    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
-  } */
-
-
- /* TITULO PRINCIPAL SILLONESFB */
- #principal {
-   position: absolute;
-   top: 210px;
-   padding: 320px;
-   font-size: 1000%;
- }
-
- @media screen and (max-width: 1500px) {
-   #principal {
-     position: absolute;
-     top: 110px;
-     padding: 120px;
-     font-size: 700%;
-   }
- }
-
- @media screen and (max-width: 850px) {
-   #principal {
-     position: absolute;
-     top: 100px;
-     padding: 100px;
-     font-size: 500%;
-   }
- }
-
- @media screen and (max-width: 630px) {
-   #principal {
-     position: absolute;
-     top: 110px;
-     padding: 50px;
-     font-size: 500%;
-   }
- }
-
- @media screen and (max-width: 530px) {
-   #principal {
-     position: absolute;
-     top: 100px;
-     padding: 50px;
-     font-size: 300%;
-   }
- }
-
- @media screen and (max-width: 400px) {
-   #principal {
-     position: absolute;
-     /*parte superior */
-     top: 50px;
-     /* relleno */
-     padding: 20px;
-     /* tamaño de fuente */
-     font-size: 300%;
-   }
- }
-
- /* FIN TITULO PRINCIPAL SILLONESFB */
-
-
-
- @media screen and (max-width: 460px) {
-   .hojas {
-     position: relative;
-   }
- }
-
- /* light box */
-
- /*Estilos de la galeria*/
-
- .galeria {
-   width: 90%;
-   margin: auto;
-   list-style: none;
-   padding: 20px;
-   box-sizing: border-box;
-
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
- }
-
- .galeria li {
-   margin: 5px;
- }
-
- .galeria img {
-   width: 150px;
-   height: 100px;
- }
-
- /*Estilos del modal*/
- .modal {
-   display: none;
- }
-
- .modal:target {
-   display: block;
-   position: fixed;
-   background: rgba(0, 0, 0, 0.8);
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
- }
-
- .imagen {
-   width: 100%;
-   height: 50%;
-
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
-
- .imagen a {
-   color: #fff;
-   font-size: 40px;
-   text-decoration: none;
-   margin: 0 10px;
- }
-
- /* .imagen a:nth-child(2) {
-    margin: 0;
-    height: 100%;
-    flex-shrink: 2;
+body {
+  position: absolute;
 }
- */
- @media screen and (max-width: 1000px) {
-   .zoom_desaparecer {
-     display: none;
-   }
- }
 
- .imagen img {
-   width: 500px;
-   height: 100%;
-   max-width: 100%;
-   border: 7px solid #fff;
-   box-sizing: border-box;
- }
 
- .cerrar {
-   display: block;
-   background: #fff;
-   width: 30px;
-   height: 35px;
-   margin: 15px auto;
-   text-align: center;
-   text-decoration: none;
-   font-size: 25px;
-   color: #000;
-   padding: 5px;
-   border-radius: 50%;
-   line-height: 25px;
- }
+/* TITULO PRINCIPAL SILLONESFB */
+#principal {
+  position: absolute;
+  top: 210px;
+  padding: 320px;
+  font-size: 1000%;
+}
 
- @media screen and (max-width: 400px) {
-   .cerrar {
-     display: block;
-     width: 50px;
-     height: 40px;
-     margin: 0px auto;
-     font-size: 40px;
-     padding: 5px;
-     line-height: 25px;
-   }
- }
-
- @media screen and (max-width: 300px) {
-   .cerrar {
-     display: block;
-     width: 50px;
-     height: 40px;
-     margin: 0px auto;
-     font-size: 40px;
-     padding: 5px;
-     line-height: 25px;
-   }
- }
-
- @media screen and (max-width: 200px) {
-   .cerrar {
-     display: block;
-     width: 50px;
-     height: 40px;
-     margin: -250px auto;
-     font-size: 40px;
-     padding: 5px;
-     line-height: 25px;
-   }
- }
-
- /* fin light box */
-
- /* FOOTER*/
- footer {
-   bottom: 0;
-   text-align: center;
-   padding: 3px;
-   background-color: rgb(38, 38, 43);
-   color: white;
- }
-
- @media only screen and (min-width:350px) and (max-width: 600px) {
-   footer {
-     font-size: 20px;
-   }
- }
-
-/*  @media only screen and (min-width:100px) and (max-width: 349px) {
-   footer {
-     font-size: 20px;
-   }
- } */
-
- /*   footer {
+@media screen and (max-width: 1500px) {
+  #principal {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    top: 110px;
+    padding: 120px;
+    font-size: 700%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #principal {
+    position: absolute;
+    top: 100px;
+    padding: 100px;
+    font-size: 500%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #principal {
+    position: absolute;
+    top: 110px;
+    padding: 50px;
+    font-size: 500%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #principal {
+    position: absolute;
+    top: 100px;
+    padding: 50px;
+    font-size: 300%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #principal {
+    position: absolute;
+    /*parte superior */
+    top: 50px;
+    /* relleno */
+    padding: 20px;
+    /* tamaño de fuente */
+    font-size: 300%;
+  }
+}
+
+/* FIN TITULO PRINCIPAL SILLONESFB */
+
+
+
+@media screen and (max-width: 460px) {
+  .hojas {
+    position: relative;
+  }
+}
+
+/* light box */
+
+/*Estilos de la galeria*/
+
+.galeria {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.galeria li {
+  margin: 5px;
+}
+
+.galeria img {
+  width: 150px;
+  height: 100px;
+}
+
+/*Estilos del modal*/
+.modal {
+  display: none;
+}
+
+.modal:target {
+  display: block;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen {
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen a {
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .zoom_desaparecer {
+    display: none;
+  }
+}
+
+.imagen img {
+  width: 500px;
+  height: 100%;
+  max-width: 100%;
+  border: 7px solid #fff;
+  box-sizing: border-box;
+}
+
+.cerrar {
+  display: block;
+  background: #fff;
+  width: 30px;
+  height: 35px;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  padding: 5px;
+  border-radius: 50%;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 400px) {
+  .cerrar {
+    display: block;
+    width: 50px;
+    height: 40px;
+    margin: 0px auto;
+    font-size: 40px;
+    padding: 5px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .cerrar {
+    display: block;
+    width: 50px;
+    height: 40px;
+    margin: 0px auto;
+    font-size: 40px;
+    padding: 5px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .cerrar {
+    display: block;
+    width: 50px;
+    height: 40px;
+    margin: -250px auto;
+    font-size: 40px;
+    padding: 5px;
+    line-height: 25px;
+  }
+}
+
+/* fin light box */
+
+/* FOOTER*/
+footer {
+  bottom: 0;
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(38, 38, 43);
+  color: white;
+}
+
+@media only screen and (min-width:350px) and (max-width: 600px) {
+  footer {
+    font-size: 20px;
+  }
+}
+
+/*FIN FOOTER */
+
+/* CONTACTOS */
+@media only screen and (min-width:350px) and (max-width: 600px) {
+  .contactos {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width:100px) and (max-width: 349px) {
+  .contactos {
+    font-size: 50px;
+  }
+}
+
+/* FIN CONTACTOS */
+
+/* PRODUCTOS DESTACADOS*/
+@media only screen and (max-width: 600px) {
+  .Productosdestacados {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:100px) and (max-width: 600px) {
+  .imagenProductoDestacado {
     width: 100%;
-  } */
- /*FIN FOOTER */
+  }
+}
 
- /* CONTACTOS */
- @media only screen and (min-width:350px) and (max-width: 600px) {
-   .contactos {
-     font-size: 30px;
-   }
- }
+@media only screen and (max-width: 600px) {
+  .fabricantesDirectos {
+    font-size: 20px;
+  }
+}
 
- @media only screen and (min-width:100px) and (max-width: 349px) {
-   .contactos {
-     font-size: 50px;
-   }
- }
+@media only screen and (max-width: 600px) {
+  .Bienvenidos {
+    font-size: 50px;
+  }
+}
 
- /* FIN CONTACTOS */
-
- /* PRODUCTOS DESTACADOS*/
- @media only screen and (max-width: 600px) {
-   .Productosdestacados {
-     display: none;
-   }
- }
-
- @media only screen and (min-width:100px) and (max-width: 600px) {
-   .imagenProductoDestacado {
-     width: 100%;
-   }
- }
-
- @media only screen and (max-width: 600px) {
-   .fabricantesDirectos {
-     font-size: 20px;
-   }
- }
-
- @media only screen and (max-width: 600px) {
-   .Bienvenidos {
-     font-size: 50px;
-   }
- }
+/* FIN BOTON */
+/* FIN PREDUCTOS DESTACADOS*/
 
 
+@media only screen and (min-width:100px) and (max-width: 600px) {
+  .muestra {
+    font-size: 20px;
+  }
+}
 
- /* FIN BOTON */
- /* FIN PREDUCTOS DESTACADOS*/
+@media only screen and (min-width:100px) and (max-width: 349px) {
+  .muestra {
+    font-size: 50px;
+  }
+}
 
- /*MENU DEL NAVEGADOR */
-/*  @media only screen and (min-width:100px) and (max-width: 600px) {
-   a {
-     font-size: 30px;
-   }
- }
+/* CONTACTOS SACADO DE INTERNET */
 
- @media only screen and (min-width:100px) and (max-width: 349px) {
-   a {
-     font-size: 50px;
-   }
- } */
-
- /* FIN MENU DEL NAVEGADOR*/
-
-/*  @media only screen and (min-width:350px) and (max-width: 600px) {
-   .menuCSS {
-     font-size: 30px;
-   }
- }
-
- @media only screen and (min-width:100px) and (max-width: 349px) {
-   .menuCSS {
-     font-size: 30px;
-   }
- } */
-
- @media only screen and (min-width:100px) and (max-width: 600px) {
-   .muestra {
-     font-size: 20px;
-   }
- }
-
- @media only screen and (min-width:100px) and (max-width: 349px) {
-   .muestra {
-     font-size: 50px;
-   }
- }
-
- /* CONTACTOS SACADO DE INTERNET */
-
- /* Importación de fuentes de google fonts */
- @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+/* Importación de fuentes de google fonts */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
 
- body {
-   height: 100%;
-   font-family: 'Noto Sans', sans-serif;
-   background-color: #3f8838;
- }
+body {
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #3f8838;
+}
 
- .contact_form {
-   width: 460px;
-   height: auto;
-   margin: 80px auto;
-   border-radius: 10px;
-   padding-top: 30px;
-   padding-bottom: 20px;
-   background-color: #ffffff;
-   padding-left: 30px;
- }
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  padding-left: 30px;
+}
 
- input {
-   background-color: #ffffff;
-   width: 408px;
-   height: 40px;
-   border-radius: 5px;
-   border-style: solid;
-   border-width: 1px;
-   border-color: #0a91eb;
-   margin-top: 10px;
-   padding-left: 10px;
-   margin-bottom: 20px;
- }
+input {
+  background-color: #ffffff;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0a91eb;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
 
- textarea {
-   background-color: #fbfbfb;
-   width: 405px;
-   height: 150px;
-   border-radius: 5px;
-   border-style: solid;
-   border-width: 1px;
-   border-color: #0a91eb;
-   margin-top: 10px;
-   padding-left: 10px;
-   margin-bottom: 20px;
-   padding-top: 15px;
- }
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0a91eb;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
 
- label {
-   display: block;
-   float: center;
- }
+label {
+  display: block;
+  float: center;
+}
 
- #enviar {
-   height: 45px;
-   padding-left: 5px;
-   padding-right: 5px;
-   margin-bottom: 20px;
-   margin-top: 10px;
-   text-transform: uppercase;
-   border-style: solid;
-   border-radius: 10px;
-   width: 420px;
-   cursor: pointer;
- }
+#enviar {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
 
- button p {
-   color: #fff;
- }
+button p {
+  color: #fff;
+}
 
- .obligatorio {
-   color: #ee0606;
- }
+.obligatorio {
+  color: #ee0606;
+}
 
- .aviso {
-   font-size: 13px;
-   color: #0e0e0e;
- }
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
 
- /* Letra dentro de los campos */
- ::-webkit-input-placeholder {
-   color: #838383;
- }
+/* Letra dentro de los campos */
+::-webkit-input-placeholder {
+  color: #838383;
+}
 
- ::-webkit-textarea-placeholder {
-   color: #ff0000;
- }
+::-webkit-textarea-placeholder {
+  color: #ff0000;
+}
 
- .formulario input:focus {
-   outline: 0;
-   border: 1px solid #1eff00;
- }
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #1eff00;
+}
 
- .formulario textarea:focus {
-   outline: 0;
-   border: 1px solid #1ef002;
- }
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #1ef002;
+}
 
- /*  FIN CONTACTOS SACADO DE INTERNET */
+/*  FIN CONTACTOS SACADO DE INTERNET */
+
+/* imagen de DP de los articulos */
+
+@media only screen and (min-width:0px) and (max-width: 2000px) {
+  .imagenDP {
+    width: 70%;
+  }
+}
