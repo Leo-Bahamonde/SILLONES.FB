@@ -13,31 +13,29 @@
   
   <!-- formulario de contacto en html y css -->  
     <div class="contact_form">
-      <div class="row">
-        <div class="col-md-7">
-        <div class="formulario">            
+        <div class="formulario row">            
       <h1>Formulario de contacto</h1>
-      <form action="submeter-formulario.php" method="post">               
-    <p>
+     <form action="submeter-formulario.php" method="post">               
+    <p class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
       <label for="nombre" class="colocar_nombre">Nombre
          <span class="obligatorio">*</span>
       </label>
          <input class="primary" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
     </p>
                             
-     <p>
+     <p class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
         <label for="email" class="colocar_email">Email
          <span class="obligatorio">*</span>
         </label>
           <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
      </p>
                         
-     <p>
+     <p class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
        <label for="telefone" class="colocar_telefono">Teléfono
          </label>
            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
      </p>                     
-     <p>
+     <p class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
         <label for="mensaje" class="colocar_mensaje">Mensaje
             <span class="obligatorio">*</span>
         </label>                     
@@ -51,9 +49,7 @@
      </p>                    
                         
      </form>
-        </div> 
-      </div>
-      </div> 
+        </div>  
     </div>
 
 </body>
@@ -66,9 +62,7 @@
 </body>
 </html>
 
-<!-- git add .
-git commit -am "make it better"
-git push heroku master -->
+
 
 
  
