@@ -76,6 +76,9 @@ router.get("/DP_CHESTERFIELD.html",(req,res) =>{
 router.get("/contactos",(req,res) =>{
     res.render("contactos.html",{title: "sillones.html"});
 });
-
+/*  router.use((req,res,next)=>{
+    res.status(400).sendFile(__dirname+ "/views/404.html")
+}) */
+ 
 module.exports = router;
 

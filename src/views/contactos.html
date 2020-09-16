@@ -12,31 +12,31 @@
  
   
   <!-- formulario de contacto en html y css -->  
-    <div class="contact_form">
+    <div class="contact_form ">
+      <div class="row">
         <div class="formulario">            
       <h1>Formulario de contacto</h1>
-                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
                     <form action="submeter-formulario.php" method="post">               
-    <p>
+    <p class="col-lg-12">
       <label for="nombre" class="colocar_nombre">Nombre
          <span class="obligatorio">*</span>
       </label>
          <input class="primary" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
     </p>
                             
-     <p>
+     <p class="col-lg-12">
         <label for="email" class="colocar_email">Email
          <span class="obligatorio">*</span>
         </label>
           <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
      </p>
                         
-     <p>
+     <p class="col-lg-12">
        <label for="telefone" class="colocar_telefono">Teléfono
          </label>
            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
      </p>                     
-     <p>
+     <p class="col-lg-12">
         <label for="mensaje" class="colocar_mensaje">Mensaje
             <span class="obligatorio">*</span>
         </label>                     
@@ -51,6 +51,7 @@
                         
      </form>
         </div>  
+      </div>
     </div>
 
 </body>
