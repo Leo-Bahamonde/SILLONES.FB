@@ -12,50 +12,59 @@
  
   
   <!-- formulario de contacto en html y css -->  
-    <div class="contact_form row">
-        <div class="formulario ">            
-      <h1>Formulario de contacto</h1>
-     <form action="submeter-formulario.php" method="post">  
-
-    <p class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <label for="nombre" class="colocar_nombre">Nombre
-         <span class="obligatorio">*</span>
-      </label>
-         <input class="primary" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-    </p>
-                            
-     <p class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-        <label for="email" class="colocar_email">Email
-         <span class="obligatorio">*</span>
-        </label>
-          <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-     </p>
-                        
-     <p class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-       <label for="telefone" class="colocar_telefono">Teléfono
-         </label>
-           <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-     </p>   
-
-     <p class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-        <label for="mensaje" class="colocar_mensaje">Mensaje
-            <span class="obligatorio">*</span>
-        </label>                     
-          <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-     </p>                                    
-                            
-      <button type="submit" name="enviar_formulario" class="btn btn-primary" id="enviar"><p>Enviar</p></button>
-
-     <p class="aviso">
-        <span class="obligatorio"> * </span>los campos son obligatorios.
-     </p>                    
-                        
+ <div class="container">
+   <h1>Formulario de contactos</h1>
+   <div class="row">
+     <form action="">
+   <p class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+     <label for="nombre">Nombre</label>
+     <input type="text" id="nombre">
+   </p>
+   <p class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+     <label for="email">Email</label>
+     <input type="email" id="email">
+   </p>
+   <p class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+     <label for="celular">Celular</label>
+     <input type="tel" id="celular">
+   </p>
+   <p class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+     <label for="mensaje">Mensaje</label>
+     <textarea name="" id="mensaje" rows="10"></textarea> 
+   </p>
+   <p class="col-12">
+     <button class="btn btn-primary" id="enviar" onclick="Capturar();"  type="reset">Enviar</button>
+   </p>
      </form>
-        </div>  
-    </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
 
-</body>
-</html>
+<script>
+  //FORMULARIO
+     function Capturar() {
+       function Contactos (nombre,email,celular,mensaje){
+           this.nombre=nombre;
+           this.email=email;
+           this.celular=celular;
+           this.mensaje=mensaje;
+      }
+       const CapturarNombre = document.getElementById("nombre").value;
+         //console.log(CapturarNombre);
+       const CapturarEmail = document.getElementById("email").value;
+        // console.log(CapturarEmail);
+       const CapturarCelular = document.getElementById("celular").value;
+        // console.log(CapturarCelular);
+       const CapturarMensaje = document.getElementById("mensaje").value;
+        // console.log(CapturarMensaje);
+        const Paquete = new Contactos(CapturarNombre,CapturarEmail,CapturarCelular,CapturarMensaje);
+            console.log(Paquete)
+     }
+   
+</script>
 
 <!--FOOTER-->
        <%- include ('partials/footer+script.html')%>
@@ -63,13 +72,4 @@
 
 </body>
 </html>
-
-
-
-
- 
-
-
-   
- 
 
