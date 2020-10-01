@@ -13,9 +13,6 @@ router.get("/sillones",(req,res) =>{
 router.get("/esquineros",(req,res) =>{
     res.render("Esquineros.html",{title: "sillones.html"});
 });
-/* router.get("/sillas",(req,res) =>{
-    res.render("SILLAS.html",{title: "sillones.html"});
-}); */
 router.get("/materas",(req,res) =>{
     res.render("Materas.html",{title: "sillones.html"});
 });
@@ -77,10 +74,12 @@ router.get("/contactos",(req,res) =>{
     res.render("contactos.html",{title: "sillones.html"});
 });
 
+
  /* router.use((req,res,next)=>{
     res.status(400).sendFile(__dirname + "/views/404.html")
 });  */
 
  
 module.exports = router;
-
+  
+  

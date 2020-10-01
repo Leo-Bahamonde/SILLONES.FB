@@ -21,5 +21,4 @@ app.use(express.static(path.join(__dirname,"publica")));
 app.listen(port,()=>{
     console.log("servidor escuchando en puerto:", app.get("port"));
 });
-  
-  
+
