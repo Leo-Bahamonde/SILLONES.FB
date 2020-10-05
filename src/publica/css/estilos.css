@@ -1,255 +1,8 @@
-@media screen and (max-width: 770px) {
-  body {
-    position: absolute;
-  }
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lora', serif;
 }
-/* TITULO PRINCIPAL SILLONESFB */
- @media only screen and (min-width:1500px){
-   #principal {
-     position: absolute;
-     top: 50px;
-     padding: 320px;
-     font-size: 1000%;
-   }
- }
- @media only screen and (min-width:1200px) and (max-width: 1499px) {
-   #principal {
-     position: absolute;
-     top: 110px;
-     padding: 120px;
-     font-size: 700%;
-   }
- }
-
- @media only screen and (min-width:700px) and (max-width: 1199px) {
-   #principal {
-     position: absolute;
-     top: 100px;
-     padding: 100px;
-     font-size: 500%;
-   }
- }
-
- @media only screen and (min-width:530px) and (max-width: 699px) {
-   #principal {
-     position: absolute;
-     top: 50px;
-     padding: 50px;
-     font-size: 500%;
-   }
- }
- @media only screen and (min-width:100px) and (max-width: 529px) {
-   #principal {
-     position: absolute;
-     top: 30px;/*parte superior */
-     padding: 50px;/* relleno */
-     font-size: 200%; /* tamaño de fuente */
-   }
- }
-
- /* FIN TITULO PRINCIPAL SILLONESFB */
-
- @media screen and (max-width: 460px) {
-   .hojas {
-     position: relative;
-   }
- }
- /* light box */
-
- /*Estilos de la galeria*/
-
- .galeria {
-   width: 90%;
-   margin: auto;
-   list-style: none;
-   padding: 20px;
-   box-sizing: border-box;
-
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
- }
-
- .galeria li {
-   margin: 5px;
- }
-
- .galeria img {
-   width: 150px;
-   height: 100px;
- }
-
- /*Estilos del modal*/
- .modal {
-   display: none;
- }
-
- .modal:target {
-   display: block;
-   position: fixed;
-   background: rgba(0, 0, 0, 0.8);
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
- }
-
- .imagen {
-   width: 100%;
-   height: 50%;
-
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
-
- .imagen a {
-   color: #fff;
-   font-size: 40px;
-   text-decoration: none;
-   margin: 0 10px;
- }
- @media screen and (max-width: 1000px) {
-   .zoom_desaparecer {
-     display: none;
-   }
- }
-
- .imagen img {
-   width: 500px;
-   height: 100%;
-   max-width: 100%;
-   border: 7px solid #fff;
-   box-sizing: border-box;
- }
-
- .cerrar {
-   display: block;
-   background: #fff;
-   width: 30px;
-   height: 35px;
-   margin: 15px auto;
-   text-align: center;
-   text-decoration: none;
-   font-size: 25px;
-   color: #000;
-   padding: 5px;
-   border-radius: 50%;
-   line-height: 25px;
- }
-
- @media screen and (max-width: 400px) {
-   .cerrar {
-     display: block;
-     width: 50px;
-     height: 40px;
-     margin: 0px auto;
-     font-size: 40px;
-     padding: 5px;
-     line-height: 25px;
-   }
- }
-
- @media screen and (max-width: 300px) {
-   .cerrar {
-     display: block;
-     width: 50px;
-     height: 40px;
-     margin: 0px auto;
-     font-size: 40px;
-     padding: 5px;
-     line-height: 25px;
-   }
- }
-
- @media screen and (max-width: 200px) {
-   .cerrar {
-     display: block;
-     width: 50px;
-     height: 40px;
-     margin: -250px auto;
-     font-size: 40px;
-     padding: 5px;
-     line-height: 25px;
-   }
- }
- /* fin light box */
-
- /* CONTACTOS 
- @media only screen and (min-width:350px) and (max-width: 600px) {
-   .contactos {
-     font-size: 30px;
-   }
- }
-
- @media only screen and (min-width:100px) and (max-width: 349px) {
-   .contactos {
-     font-size: 50px;
-   }
- }
- FIN CONTACTOS */
-
- /* PRODUCTOS DESTACADOS*/
- @media only screen and (max-width: 600px) {
-   .Productosdestacados {
-     display: none;
-   }
- }
-
- @media only screen and (min-width:100px) and (max-width: 600px) {
-   .imagenProductoDestacado {
-     width: 100%;
-   }
- }
-
- @media only screen and (max-width: 600px) {
-   .fabricantesDirectos {
-     font-size: 20px;
-   }
- }
-
- @media only screen and (max-width: 600px) {
-   .Bienvenidos {
-     font-size: 30px;
-   }
- }
- /* FIN BOTON */
- /* FIN PREDUCTOS DESTACADOS*/
-
- @media only screen and (min-width:100px) and (max-width: 600px) {
-   .muestra {
-     font-size: 20px;
-   }
- }
-
- @media only screen and (min-width:100px) and (max-width: 349px) {
-   .muestra {
-     font-size: 50px;
-   }
- }
- /* imagen de DP de los articulos */
-
- @media only screen and (min-width:0px) and (max-width: 2000px) {
-  .imagenDP{
-    width: 70%;
-  }
-}
- /* FOOTER*/
- footer {
-  bottom: 0;
-  text-align: center;
-  padding: 3px;
-  background-color: rgb(38, 38, 43);
-  color: white;
-}
-/* @media only screen and (min-width:350px) and (max-width: 600px) {
-  footer {
-    font-size: 20px;
-  }
-} */
-/*FIN FOOTER */
-
-
 /* WHATSAPP */
 .btn-whatsapp {
   display:block;
@@ -265,178 +18,51 @@
   z-index:999;
 }
 /*FIN WHATSAPP */
+/* TITULO PRINCIPAL SILLONESFB */
 
+@media screen and (min-width: 1200px) and (max-width: 10000px) {
+  .Titulo_Principal {
+    position: absolute;
+    padding:290px;
+    font-size: 100px !important;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .Titulo_Principal {
+    position: absolute;
+    padding: 90px;
+    font-size: 45px !important;
+    
+  }
+}
+@media screen and (min-width: 340px) and (max-width: 479px) {
+  .Titulo_Principal {
+    position: absolute;
+    padding: 60px;
+    font-size: 35px !important;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 339px) {
+  .Titulo_Principal {
+    position: absolute;
+    padding: 40px;
+    font-size: 20px !important;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 299px) {
+  .Titulo_Principal {
+    position: absolute;
+    padding: 30px;
+    font-size: 20px !important;
+  }
+}
+/* FIN TITULO PRINCIPAL SILLONESFB */
+/* FOOTER */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FORMULARIO */
-
-main {
-	max-width: 800px;
-	width: 90%;
-	margin: auto;
-	padding: 40px;
+footer{
+  background: rgb(37, 36, 42);
+  text-align: center;
+  font-size: 20px;
 }
 
-.formulario {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-}
-
-.formulario__label {
-	display: block;
-	font-weight: 700;
-	padding: 10px;
-	cursor: pointer;
-}
-
-.formulario__grupo-input {
-	position: relative;
-}
-
-.formulario__input {
-	width: 100%;
-	background: #fff;
-	border: 3px solid transparent;
-	border-radius: 3px;
-	height: 45px;
-	line-height: 45px;
-	padding: 0 40px 0 10px;
-	transition: .3s ease all;
-}
-
-.formulario__input:focus {
-	border: 3px solid #0075FF;
-	outline: none;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
-}
-
-.formulario__input-error {
-	font-size: 12px;
-	margin-bottom: 0;
-	display: none;
-}
-
-.formulario__input-error-activo {
-	display: block;
-}
-
-.formulario__validacion-estado {
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
-}
-
-.formulario__grupo-terminos, 
-.formulario__mensaje,
-.formulario__grupo-btn-enviar {
-	grid-column: span 2;
-}
-
-.formulario__mensaje {
-	height: 45px;
-	line-height: 45px;
-	background: #F66060;
-	padding: 0 15px;
-	border-radius: 3px;
-	display: none;
-}
-
-.formulario__mensaje-activo {
-	display: block;
-}
-
-.formulario__mensaje p {
-	margin: 0;
-}
-
-.formulario__grupo-btn-enviar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.formulario__btn {
-	height: 45px;
-	line-height: 45px;
-	width: 30%;
-	background: #000;
-	color: #fff;
-	font-weight: bold;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: .1s ease all;
-}
-
-.formulario__btn:hover {
-	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
-}
-
-.formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
-	display: none;
-}
-
-.formulario__mensaje-exito-activo {
-	display: block;
-}
-
-/* ----- -----  Estilos para Validacion ----- ----- */
-.formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
-}
-
-.formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid #bb2929;
-}
-
-
-/* ----- -----  Mediaqueries ----- ----- */
-@media screen and (max-width: 800px) {
-	.formulario {
-		grid-template-columns: 1fr;
-	}
-
-	.formulario__grupo-terminos, 
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
-		grid-column: 1;
-	}
-
-	.formulario__btn {
-		width: 100%;
-	}
-}
-
-/* FIN FORMULARIO*/
+/*FIN FOOTER */
