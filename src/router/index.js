@@ -75,11 +75,6 @@ router.get("/contactos",(req,res) =>{
 });
 
 
- /* router.use((req,res,next)=>{
-    res.status(400).sendFile(__dirname + "/views/404.html")
-});  */
-
- 
 module.exports = router;
   
   

@@ -1,8 +1,34 @@
-console.log("hola a todos desde js.js")
+'use strict';
 
-/* Contactos.html 
+const e = React.createElement;
 
-import React,{Fragment,useState} from 'react';
+class LikeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+
+  render() {
+    if (this.state.liked) {
+      return 'You liked this.';
+    }
+
+    return e(
+      'button',
+      { onClick: () => this.setState({ liked: true }) },
+      'Like'
+    );
+  }
+}
+
+const domContainer = document.querySelector('#id');
+ReactDOM.render(e(LikeButton), domContainer);
+
+
+
+
+/*
+ import React,{Fragment,useState} from 'react';
 
 const Formulario = () => {
 
@@ -54,12 +80,10 @@ const handleInputChange=(event)=>{
 		</div>
 	</div>
 </div>
-</form>     
-        </Fragment>     
+</form>
+        </Fragment>
+        
     );
 }
-export default Formulario;
-
-/* Fin Contactos.html */
-
-
+ 
+export default Formulario; */

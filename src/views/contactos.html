@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="es">
 <head>
     <title>CONTACTOS</title>
@@ -10,8 +10,53 @@
          <%- include ('partials/menu.html')%>
   <!--Fin del menú de navegación-->
 
-<!-- <script src="./partials/js.js"></script> -->
+<!-- React -->
+<div id="id"></div>
+<!-- Fin React -->
 
+<!-- Guia -->
+
+<form action="" method="get" id="formulario" onSubmit={enviarDatos}>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-12">
+        <h2 class="display-4">Formulario de contacto</h2>
+        </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 p-3">
+        <input  type="text" class="form-control"  name="nombre" id="nombre" onChange={handleInputChange} placeholder="nombre*" maxlength="15" required></input>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 p-3">
+        <input  type="text" class="form-control" name="apellido"  id="apellido" onChange={handleInputChange} placeholder="apellido*" maxlength="30" required></input>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 p-3">
+        <input  type="email" class="form-control" name="email" id="email" onChange={handleInputChange} placeholder="Correo electronico*" required></input>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 p-3">
+        <input  type="tel" class="form-control" name="telefono" id="telefono" onChange={handleInputChange} placeholder="telefono o celular"></input>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 p-3">
+        <textarea class="form-control" name="mensaje" id="mensaje" onChange={handleInputChange} maxlength="500" cols="30" rows="10" placeholder="Escribe un mensaje...*" required></textarea>
+      </div>
+      <div id="botonContactos">
+        <button class="btn btn-primary mr-4" type="submit" >Enviar</button>
+        <i>*Campo obligatorio</i>
+      </div>
+    </div>
+  </div>
+  </form>
+
+<!-- Guia -->
+
+
+
+    <!-- Carga React. -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- Carga JSX a React -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<!-- JAVASCRIP INTERNO -->
+<script src="./javascript/script.js"></script>
 
 <!--FOOTER-->
        <%- include ('partials/footer+script.html')%>
@@ -19,6 +64,26 @@
 
 
 
-</body>
-</html>
 
+<!-- 
+<div class="span4">
+  <div class="textbanner  text-center placeholder-container">
+                              <a class="textbanner-link" href="https://www.yeahdeco.com.ar/cuadros1/cuadros-impresos/series/" alt="CUADROS SERIES" title="CUADROS SERIES">
+                         
+      <div class="textbanner-image overlay ">
+
+                              <img class="textbanner-image-background lazyautosizes blur-up-huge ls-is-cached lazyloaded" 
+                              src="//d26lpennugtm8s.cloudfront.net/stores/128/125/themes/new_linkedman/img-1901529332-1600277449-88b37d56c5b6b70149d942d39d203a8e1600277450.jpg?1262331808" 
+                              data-srcset="//d26lpennugtm8s.cloudfront.net/stores/128/125/themes/new_linkedman/img-1901529332-1600277449-88b37d56c5b6b70149d942d39d203a8e1600277450.jpg?1262331808 480w, //d26lpennugtm8s.cloudfront.net/stores/128/125/themes/new_linkedman/img-1901529332-1600277449-88b37d56c5b6b70149d942d39d203a8e1600277450.jpg?1262331808 640w"
+                              data-sizes="auto" data-expand="-10" alt="CUADROS SERIES" sizes="361px" srcset="//d26lpennugtm8s.cloudfront.net/stores/128/125/themes/new_linkedman/img-1901529332-1600277449-88b37d56c5b6b70149d942d39d203a8e1600277450.jpg?1262331808 480w, //d26lpennugtm8s.cloudfront.net/stores/128/125/themes/new_linkedman/img-1901529332-1600277449-88b37d56c5b6b70149d942d39d203a8e1600277450.jpg?1262331808 640w">
+      
+      </div>
+
+      <div class="textbanner-text">
+           <div 
+              class="textbanner-title">CUADROS SERIES   
+           </div>
+      </div>
+                              </a>
+                      </div>
+</div> -->
