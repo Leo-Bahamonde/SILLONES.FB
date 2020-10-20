@@ -4,31 +4,26 @@
     <title>PATCHWORK</title>
     <%- include ('partials/head.html')%>
   </head>
-
   <body>
     <!--menú de navegación-->
     <%- include ('partials/menu.html')%>
     <!--Fin del menú de navegación-->
-
+    
+    <br><br><br><br>
+    <div class="container-all m-5" id="move-content">
     <div class="container text-center my-3">
-      <h2>SILLONES FB</h2>
-      <p>
-        Somos fabricantes directos en Villa Ballester, San Martin. Aceptamos
-        tarjetas Visa o MasterCard (credito). Realizamos envios a domicilio
-        costo adicional segun localidad.
-      </p>
-
       <div class="align-items-center">
         <hr />
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
-            <img class="imagenDP"
+            <div class="imagen">
+            <img
               src="imagenes/S4.jpg"
               alt="PATCHWORK"
               title="PATCHWORK"
               width="500px"
               height="auto"
-            />
+            /></div>
             <section>
               <div class="my-3">
                 <a
@@ -48,7 +43,7 @@
             </section>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-            <h1>PATCHWORK</h1>
+            <h2>PATCHWORK</h2>
             <hr width="50%" />
             <h4 class="pt-2">descripcion</h4>
             <i class="fas fa-globe"
@@ -68,15 +63,11 @@
         </div>
       </div>
     </div>
-
+  </div>
     <!--FIN PAGINAS-->
 
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
     <!--FOOTER-->
-
-    <%- include ('partials/footer+script.html')%>
-
+        <%- include ('partials/footer+script.html')%>
     <!-- FIN FOOTER-->
   </body>
 </html>
