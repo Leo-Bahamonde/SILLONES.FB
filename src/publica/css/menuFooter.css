@@ -14,9 +14,10 @@ header {
     height: 80px;
     background: white;
     box-shadow: 0 4px 25px -22px black;
-    z-index: 2;
+    z-index: 10;
 }
 .header-content{
+    position: relative;
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -27,12 +28,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .logo h1 b{
     color: rgb(29, 112, 180);
 }
 .menu{
     height: 80px;
+    margin-right: 60px;
+
 }
 .menu nav {
     height: 100%;
@@ -64,7 +68,7 @@ header {
     transition: color 300ms;
 }
 .menu nav ul li a:hover{
-    color: rgb(180, 29, 29);
+    color: rgb(29, 112, 180, 0.6);
     transition: color 300ms; 
 }
 .menu nav ul li a i{
@@ -93,6 +97,8 @@ header {
     opacity: 0.8;
 }
 /* FIN MENU */
+
+
 /* PORTADA */
 
 .container-cover{
@@ -141,15 +147,74 @@ header {
 
 }
 /* FIN PORTADA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MENU RESPONSIVE */
 @media screen and (max-width: 1220px){
     .header-content{
         max-width: 1000px;
         padding: 0 20px;
     }
+    
+    #ctn-bars-search, #ctn-bars-search input, #box-search {                              /* No puedo ajustar el input y la lista al dispositivo */
+        width: 10px;
+    }
+
 }
 @media screen and (max-width: 800px){
-
+    body{
+        overflow-x: hidden;
+    }
+    .container-all{
+       transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+    .move-container-all{
+        transform: translateX(300px); 
+    }
+    .zoom_desaparecer{
+        display: none;
+    }
     .menu{
         width: 300px;
         height: 100vh;
@@ -163,7 +228,7 @@ header {
         transition: all 300ms cubic-bezier(1,0,0,1);
     }
     .show-lateral{
-        *width: 300px;
+        width: 300px;
         transform: translateX(0px);
     }
     .menu nav ul {
@@ -181,83 +246,212 @@ header {
         margin-top: 40px;   
     }
     .menu nav ul li a i{
-        width: 25px;
+        width: 20px;
         display: inline-block;
         margin-right: 10px;
         color: rgb(29, 112, 180, 0.6);
     }
     #icon-menu{
-        display: block;
-    }
-    .move-container-all{
-        transform: translateX(300px); 
-    }
-    .container-all{
-        transition: 300ms;
-    }
-    .zoom_desaparecer{
-        display: none;
+        display: flex;
+        right: 60px;
     }
 }
+
+
+
 /*FIN MENU RESPONSIVE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Buscador de contenido*/
+
+#ctn-icon-search{
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ctn-icon-search i{
+    font-size: 18px;
+    color: #777777;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover{
+    color: #46a2fd;
+}
+
+
+#ctn-bars-search{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+
+#box-search{
+    position: fixed;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background: #fff;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+}
+
+#box-search li a{
+    display: block;
+    width: 1200px;
+    color: #777777;
+    padding: 12px 20px;
+}
+
+#box-search li a:hover{
+    background: #f3f3f3;
+}
+
+#box-search li a i{
+    margin-right: 10px;
+    color: #777777;
+}
+
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 7;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Footer - pie de pagina*/
 .container-footer{
-width: 100%;
-padding: 40px 0;
-background: #fff;
-margin-top: 40px;
-}
-.container-footer footer{
-max-width: 1200px;
-margin: auto;
-}
-.container-footer footer .logo-footer{
-text-align: center;
-}
-.container-footer footer .logo-footer img{
-width: 100px;
-}
-.container-footer footer .redes-footer{
-display: flex;
-justify-content: center;
-margin-top: 20px;
-}
-.container-footer footer .redes-footer .icon-redes-footer{
-font-size: 20px;
-margin: 20px;
-background: #efefef;
-width: 50px;
-height: 50px;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 100%;
-color: #a2a2a2;
-}
-footer .redes-footer .fa-facebook-f:hover{
-background: #41579A;
-color: #fff;
-}
-footer .redes-footer .fa-google-plus-g:hover{
-background: #DE4C34;
-color: #fff;
-}
-footer .redes-footer .fa-instagram:hover{
-background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
-color: #fff;
-}
-.container-footer footer hr{
-margin-top: 20px;
-border: none;
-height: 2px;
-background: #c0c0c07a;
-}
-.container-footer h4{
-text-align: center;
-margin-top: 40px;
-color: #8e8e8e;
-font-weight: 500;
-}
+    width: 100%;
+    padding: 40px 0;
+    background: #fff;
+    margin-top: 40px;
+    }
+    .container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+    }
+    .container-footer footer .logo-footer{
+    text-align: center;
+    }
+    .container-footer footer .logo-footer img{
+    width: 100px;
+    }
+    .container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    }
+    .container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+    }
+    footer .redes-footer .fa-facebook-f:hover{
+    background: #41579A;
+    color: #fff;
+    }
 
+    footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color: #fff;
+    }
+    .container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #c0c0c07a;
+    }
+    .container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
+    }
+    /*FIN Footer - pie de pagina*/
